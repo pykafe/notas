@@ -1,6 +1,6 @@
 # MY NOTAS
 # DATA: 07 DE FEVREREIRU 2015
-## Tips install aplikasi iha linux
+## Tips install aplikasi iha linux:
     -sudo su
     -apt-get install python-pip
     -apt-get install mysql-server
