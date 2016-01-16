@@ -20,20 +20,16 @@
        mkdir <dir name>
        cd <dir name>  
 
-
     2) kria ita nia projectu nia naran, ita fo naran fahe.
 
        ony@ony-AO756 ~/Desktop/sabadu $ django-admin.py startproject fahe
        
        ony@ony-AO756 ~/Desktop/sabadu/fahe $ rm db.aqlite3
 
-
     3) kria fali ita nia database foun...
 
        ony@ony-AO756 ~/Desktop/sabadu/fahe $ python manage.py makemigrations
        ony@ony-AO756 ~/Desktop/sabadu/fahe $ python manage.py migrate
-
-
 
     4) Kria ka registu user foun
 
