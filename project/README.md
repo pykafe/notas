@@ -57,18 +57,18 @@
 
 
 ## DJANGO
-    ORM object relational mappe.
-    diferente django ho bottle:
-    django nia but hotu iha hotu tona, no ita temi det nia naran por ex. Template sira.
+ORM object relational mappe.
+diferente django ho bottle:
+django nia but hotu iha hotu tona, no ita temi det nia naran por ex. Template sira.
 
-    1. App nia bele uza ba profile.
-    2. Settings.py app sira inklui iha laran
-    3. urls,py ita defini route sira iha funsun nia leten
-    4. wsgi.py buat hotu-hotu iha nia fatin.
-    5. Manage.py nia mak manager ba buat hotu-hotu ex. hanesan server.py
-    6. Models.py nia funsaun atu tau estrutura base de dados nian.
-    7 Views atu halo nia logika. Hanesan iha server.py karik ita fo fatin template index nian.
-    8. Admin.py ita bele defini ita nia models sira.
+1. App nia bele uza ba profile.
+2. Settings.py app sira inklui iha laran
+3. urls,py ita defini route sira iha funsun nia leten
+4. wsgi.py buat hotu-hotu iha nia fatin.
+5. Manage.py nia mak manager ba buat hotu-hotu ex. hanesan server.py
+6. Models.py nia funsaun atu tau estrutura base de dados nian.
+7 Views atu halo nia logika. Hanesan iha server.py karik ita fo fatin template index nian.
+8. Admin.py ita bele defini ita nia models sira.
 
 ## INHERITANCE
     Inheritance hanesan class ho subclass.
