@@ -69,7 +69,12 @@ languages). It includes most SQL:2008 data types, including INTEGER, NUMERIC, BO
 ## what is rosetta?
 Rosetta is a dynamic binary translator for Mac OS X that allows many PowerPC applications to run on certain Intel-based Macintosh computers without modification.
 ## what is javasscript?
+JavaScript is a programming language used to make web pages interactive. It runs on your visitor's computer and doesn't require constant downloads from your website. JavaScript is often used to create polls and quizzes.
 ## what is css?
+- CSS stands for Cascading Style Sheets.
+- CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+- CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+- External stylesheets are stored in CSS files.
 ## what is html?
 ## what is endless pagination?
 ## what is flat?
