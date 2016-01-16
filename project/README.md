@@ -76,7 +76,10 @@ JavaScript is a programming language used to make web pages interactive. It runs
 - CSS saves a lot of work. It can control the layout of multiple web pages all at once.
 - External stylesheets are stored in CSS files.
 ## what is html?
+HTML is a computer language devised to allow website creation. These websites can then be viewed by anyone else connected to the Internet. It is relatively easy to learn, with the basics being accessible to most people in one sitting; and quite powerful in what it allows you to create. It is constantly undergoing revision and evolution to meet the demands and requirements of the growing Internet audience under the direction of the » W3C, the organisation charged with
+designing and maintaining the language.
 ## what is endless pagination?
+This application provides Twitter- and Digg-style pagination, with multiple and lazy pagination and optional Ajax support. It is devoted to implementing web pagination in very few steps.
 ## what is flat?
 ## what is haystack?
 ## what is regitrations?
