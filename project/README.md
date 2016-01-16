@@ -21,13 +21,13 @@
 ## From the command line, cd into a directory where you’d like to store your code, then run the following command:
     - django-admin startproject issues
 ## Let’s look at what startproject created:
-issues/
-    manage.py
-        mysite/
-            __init__.py
-                settings.py
-                    urls.py
-                        wsgi.py
+- issues/
+   - manage.py
+       - mysite/
+          - __init__.py
+                - settings.py
+                    - urls.py
+                        - wsgi.py
 Devel/Issues/Issues/support/
 -bdd/
     -features
