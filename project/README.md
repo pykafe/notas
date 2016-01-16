@@ -54,13 +54,20 @@ db.sqlite3
 fabfile.py
 manage.py
 
-# The question and answer for this issue, you should see like this:
+## The question and answer for this issue, you should see like this:
 ## what is python?
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 ## what is django?
+Django (/ˈdʒæŋɡoʊ/ jang-goh) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
 ## what is virtualens?
+ virtualenv is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.
 ## what is sqlite3?
+ SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. The code for SQLite is in the public domain and is thus free for use for any purpose, commercial or private. SQLite is the most widely deployed database in the world with more applications than we can count, including several high-profile projects.
 ## what is postgresql?
+PostgreSQL is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. It runs on all major operating systems, including Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), and Windows. It is fully ACID compliant, has full support for foreign keys, joins, views, triggers, and stored procedures (in multiple
+languages). It includes most SQL:2008 data types, including INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, and TIMESTAMP. It also supports storage of binary large objects, including pictures, sounds, or video. It has native programming interfaces for C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, among others, and exceptional documentation.
 ## what is rosetta?
+Rosetta is a dynamic binary translator for Mac OS X that allows many PowerPC applications to run on certain Intel-based Macintosh computers without modification.
 ## what is javasscript?
 ## what is css?
 ## what is html?
