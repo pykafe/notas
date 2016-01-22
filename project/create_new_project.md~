@@ -1,5 +1,4 @@
 # KRIA PROJETU FOUN HO DJANGO
-
 ## Install django
         -sudo su
         -apt-get install python-pip
