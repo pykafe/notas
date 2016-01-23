@@ -58,3 +58,6 @@ target/
 
 # any tilda files
 *~
+
+# MacOS X
+.DS_Store
