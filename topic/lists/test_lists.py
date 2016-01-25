@@ -73,6 +73,8 @@ def test_is_in_list():
 
     assert is_in_list(my_value, my_list) == True
     assert is_in_list(not_my_value, my_list) == False
+    assert is_in_list(9, my_list) == False
+    assert is_in_list(2, my_list) == True
 
 
 # List Length
