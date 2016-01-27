@@ -18,7 +18,10 @@ def add_to_list(my_value, my_list):
     Given a value and a list this function
     returns a list with the value added to it
     '''
-    pass
+    List = []
+    List.append(my_value)
+    my_value = List
+    return my_list + my_value
 
 
 def test_add_to_list():
@@ -37,7 +40,16 @@ def get_index_from_list(my_index, my_list):
     If index is not an integer return None
     Remember Python indexes starts at 0
     '''
-    pass
+    '''
+    if isinstance(my_index, int):
+        return my_list[my_index]
+    else:
+        return None
+    '''
+    if type(my_index) == int:
+        return my_list[my_index]
+    elif not type(my_index) == int:
+        return None
 
 
 def test_get_index_from_list():
@@ -54,13 +66,16 @@ def is_in_list(my_value, my_list):
     Given a value and a list this function checks if the value can be found in the list
     and returns True or False
     '''
-    pass
+    if my_value in my_list:
+        return True
+    else:
+        return False
+
 
 def test_is_in_list():
     my_value = 3
     not_my_value = 4
     my_list = [1, 2, 3]
-
     assert is_in_list(my_value, my_list) == True
     assert is_in_list(not_my_value, my_list) == False
 
@@ -72,7 +87,8 @@ def get_length(my_list):
     Given a list this function
     returns the number of items in the list
     '''
-    pass
+    get_length = len(my_list)
+    return get_length
 
 
 def test_get_length():
@@ -87,7 +103,8 @@ def merge_lists(first_list, second_list):
     Given two list this function returns a single list which contains the items of the
     first list followed by the items of the second list
     '''
-    pass
+    merge_lists = first_list + second_list
+    return merge_lists
 
 
 def test_merge_lists():
@@ -104,7 +121,7 @@ def list_to_string(my_list):
     Given a list the is funciton returns a string which includes the items of the list
     separated by single spaces
     '''
-    pass
+    return ' '.join(my_list)
 
 
 def test_list_to_string():
@@ -119,7 +136,8 @@ def count_occurrences(my_list):
     This function will return a dictionary containing
     the number of occurrences of a item in a given list.
     '''
-    pass
+    from collections import Counter
+    return Counter(my_list)
 
 
 def test_count_occurrences():
@@ -128,12 +146,16 @@ def test_count_occurrences():
 
 
 # Strings and lists
+
 def string_to_list(my_string):
     '''
     This function takes a string and returns that string as a list.
     If a the given value is not a string. The function returns None.
     '''
-    pass
+    if not isinstance (my_string, str):
+        return None
+    else:
+        return list(my_string)
 
 
 def test_string_to_list():
