@@ -162,4 +162,3 @@ def test_string_to_list():
     assert string_to_list('hello world') == ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
     assert string_to_list(5) == None
     assert string_to_list({'hello': 'world'}) == None
-
