@@ -15,12 +15,19 @@ Exemplu:
 Tamba ita bolu lista hanesan mutable. Lista Iha metode sira nebe ita uza maka henesan tuir mai:
 
 lista.append(*x*)
+
     *exemplo*:
+
     >>> a = [1, 2, 3, 5]
+
     >>> a
+
     [1, 2, 3, 5]
+
     >>> a.append(6)
+
     >>> a
+
     [1, 2, 3, 5, 6]
 
 lista.extend(*L*)
@@ -30,10 +37,15 @@ lista.extend(*L*)
     
 
 lista.insert(*i, x*)
+
     *exemplo*:
+
     >>> a = [1, 2, 3, 5]
+
     >>> a.insert(3, 4)
+
     >>> a
+
     [1, 2, 3, 4, 5]
 
 
