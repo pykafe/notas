@@ -2,7 +2,7 @@ Lists
 =====
 Strutura dadus ida nebe rai koleksaun tipo dadus oin-oin ho sequensia nebe uza squre [] hanesan taka no loke maka ita bolu ***Lista***. No bainhira ita kria ona lista ita bele halo mudansa hanesa ita aumenta, hamenus no buka item sira. Tamba ita bele aumenta no hamenus item sira iha lista maka ita bolu lista hanesan **mutable**. Hosi koleksaun dadus nebe iha lista kada dadus iha nia numeru index nebe ***hahu ho 0.***
 
-Exemplu:
+*Exemplo*:
 
     >>> lista_a = ['ida', 'rua', 'tolu', 4, 5]  
     >>> lista_a[0]
@@ -15,37 +15,29 @@ Exemplu:
 Tamba ita bolu lista hanesan mutable. Lista Iha metode sira nebe ita uza maka henesan tuir mai:
 
 lista.append(*x*)
-
-    *exemplo*:
+*exemplo*:
 
     >>> a = [1, 2, 3, 5]
-
     >>> a
-
     [1, 2, 3, 5]
-
     >>> a.append(6)
-
     >>> a
-
     [1, 2, 3, 5, 6]
 
 lista.extend(*L*)
-    *exemplo*:
+*exemplo*:
+
     >>> a = [1, 2, 3, 5]
     >>> b = [5, 7]
-    
+
 
 lista.insert(*i, x*)
 
-    *exemplo*:
+*exemplo*:
 
     >>> a = [1, 2, 3, 5]
-
     >>> a.insert(3, 4)
-
     >>> a
-
     [1, 2, 3, 4, 5]
 
 
