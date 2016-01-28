@@ -60,14 +60,18 @@ def is_in_list(my_value, my_list):
     Given a value and a list this function checks if the value can be found in the list
     and returns True or False
     '''
-    try:
-        my_list = my_list.index(my_value)
-        if isinstance(my_list, int):
-            return True
-        elif not isinstance(my_list, int):
-            return False
-    except ValueError:
-            return False
+    #try:
+        #my_list = my_list.index(my_value)
+       # if isinstance(my_list, int):
+        #    return True
+       # elif not isinstance(my_list, int):
+      #      return False
+    #except ValueError:
+            #return False
+    if my_value in my_list:
+        return True
+    else:
+        return False
 
    # if len(my_list) == my_value:
     #    return True
