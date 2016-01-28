@@ -18,7 +18,9 @@ def add_to_list(my_value, my_list):
     Given a value and a list this function
     returns a list with the value added to it
     '''
-    pass
+    my_list = [1, 2, 3, 4]
+    my_value = ([5])
+    return my_list + my_value
 
 
 def test_add_to_list():
@@ -38,8 +40,8 @@ def get_index_from_list(my_index, my_list):
     Remember Python indexes starts at 0
     '''
     pass
-
-
+    
+    
 def test_get_index_from_list():
     my_list = ['1', 'Baucau', 'Aileu', 5, 'Cars']
 
@@ -72,7 +74,9 @@ def get_length(my_list):
     Given a list this function
     returns the number of items in the list
     '''
-    pass
+    my_list = [1, 2, 3]
+    return len(my_list)
+   
 
 
 def test_get_length():
@@ -87,7 +91,9 @@ def merge_lists(first_list, second_list):
     Given two list this function returns a single list which contains the items of the
     first list followed by the items of the second list
     '''
-    pass
+    first_list = [1, 2, 3]
+    second_list = [4, 5, 6]
+    return first_list + second_list
 
 
 def test_merge_lists():
@@ -104,22 +110,23 @@ def list_to_string(my_list):
     Given a list the is funciton returns a string which includes the items of the list
     separated by single spaces
     '''
-    pass
-
-
+    my_list = ['one', 'two', 'three']
+    my_string = ', '.join(my_list)
+    
+    
 def test_list_to_string():
     my_list = ['one', 'two', 'three']
     assert list_to_string(my_list) == "one two three"
 
 
 # Count items in list
-
+from collections import Counter
 def count_occurrences(my_list):
     '''
     This function will return a dictionary containing
     the number of occurrences of a item in a given list.
     '''
-    pass
+    return Counter(my_list)
 
 
 def test_count_occurrences():
@@ -133,7 +140,11 @@ def string_to_list(my_string):
     This function takes a string and returns that string as a list.
     If a the given value is not a string. The function returns None.
     '''
-    pass
+    if not isinstance(my_string, str):
+        return None
+    elif isinstance(my_string, str):
+        return list(my_string)
+
 
 
 def test_string_to_list():
