@@ -4,21 +4,38 @@ Strutura dadus ida nebe rai koleksaun tipo dadus oin-oin ho sequensia nebe uza s
 
 Exemplu:
 
-        >>> lista_a = ['ida', 'rua', 'tolu', 4, 5]  
-        >>> lista_a[0]
-        'ida'
-        >>> lista_a[1]
-        'rua'
-        >>> lista_a[4]
-        5
+    >>> lista_a = ['ida', 'rua', 'tolu', 4, 5]  
+    >>> lista_a[0]
+    'ida'
+    >>> lista_a[1]
+    'rua'
+    >>> lista_a[4]
+    5
 
 Tamba ita bolu lista hanesan mutable. Lista Iha metode sira nebe ita uza maka henesan tuir mai:
 
 lista.append(*x*)
+    *exemplo*:
+    >>> a = [1, 2, 3, 5]
+    >>> a
+    [1, 2, 3, 5]
+    >>> a.append(6)
+    >>> a
+    [1, 2, 3, 5, 6]
 
 lista.extend(*L*)
+    *exemplo*:
+    >>> a = [1, 2, 3, 5]
+    >>> b = [5, 7]
+    
 
-lista.insert(*i, x*) 
+lista.insert(*i, x*)
+    *exemplo*:
+    >>> a = [1, 2, 3, 5]
+    >>> a.insert(3, 4)
+    >>> a
+    [1, 2, 3, 4, 5]
+
 
 lista.remove(*x*)
 

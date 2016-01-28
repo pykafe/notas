@@ -1,3 +1,4 @@
+from collections import Counter
 # Lists
 # This is how you write a funciton and a test with py.test
 
@@ -18,10 +19,13 @@ def add_to_list(my_value, my_list):
     Given a value and a list this function
     returns a list with the value added to it
     '''
-    List = []
-    List.append(my_value)
-    my_value = List
+    '''
+    a_list = []
+    a_list.append(my_value)
+    my_value = a_list
     return my_list + my_value
+    '''
+    return my_list + [my_value]
 
 
 def test_add_to_list():
@@ -46,10 +50,8 @@ def get_index_from_list(my_index, my_list):
     else:
         return None
     '''
-    if type(my_index) == int:
+    if isinstance(my_index, int):
         return my_list[my_index]
-    elif not type(my_index) == int:
-        return None
 
 
 def test_get_index_from_list():
@@ -66,10 +68,13 @@ def is_in_list(my_value, my_list):
     Given a value and a list this function checks if the value can be found in the list
     and returns True or False
     '''
+    '''
     if my_value in my_list:
         return True
     else:
         return False
+   '''
+    return my_value in my_list
 
 
 def test_is_in_list():
@@ -136,7 +141,6 @@ def count_occurrences(my_list):
     This function will return a dictionary containing
     the number of occurrences of a item in a given list.
     '''
-    from collections import Counter
     return Counter(my_list)
 
 
@@ -152,9 +156,7 @@ def string_to_list(my_string):
     This function takes a string and returns that string as a list.
     If a the given value is not a string. The function returns None.
     '''
-    if not isinstance (my_string, str):
-        return None
-    else:
+    if isinstance(my_string, str):
         return list(my_string)
 
 
