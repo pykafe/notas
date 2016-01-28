@@ -43,8 +43,7 @@
 	os.path.abspath('hello.txt')
 	os.path.
 
-####RUN TEST PHOTOGRAF
-
+###RUN TEST PHOTOGRAF
 	py.test lesson1/test_task4.py
 
 	>>> from lesson1.task4 import get_shifted_letter

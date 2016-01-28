@@ -30,7 +30,8 @@ Remove branch
 
 	(Issues)➜  Issues git:(ony_branch)git rm ony_branch
 
-Show modified
+Show modified file
+	
 	(Issues)➜  Issues git:(ony_branch)git status
 
 Git **add**  hanesan atu aseita file ne'ebe mak ita modifika ka aumenta iha ita nia projetu laran, antes atu halo commit ka push ba server [github](https://github.com/catalpainternational/issues.git) nian.
