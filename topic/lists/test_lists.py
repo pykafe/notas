@@ -39,9 +39,11 @@ def get_index_from_list(my_index, my_list):
     If index is not an integer return None
     Remember Python indexes starts at 0
     '''
-    pass
-    
-    
+    if isinstance(my_index, int):
+        return my_list[my_index]
+    else:
+        return None
+       
 def test_get_index_from_list():
     my_list = ['1', 'Baucau', 'Aileu', 5, 'Cars']
 
@@ -56,7 +58,10 @@ def is_in_list(my_value, my_list):
     Given a value and a list this function checks if the value can be found in the list
     and returns True or False
     '''
-    pass
+    if my_value in my_list:
+        return True
+    else:
+        return False
 
 def test_is_in_list():
     my_value = 3
@@ -65,7 +70,8 @@ def test_is_in_list():
 
     assert is_in_list(my_value, my_list) == True
     assert is_in_list(not_my_value, my_list) == False
-
+    assert is_in_list(9, my_list) == False
+    assert is_in_list(2, my_list) == True
 
 # List Length
 
@@ -77,8 +83,6 @@ def get_length(my_list):
     my_list = [1, 2, 3]
     return len(my_list)
    
-
-
 def test_get_length():
     my_list = [1, 2, 3]
     assert get_length(my_list) == 3
@@ -95,7 +99,6 @@ def merge_lists(first_list, second_list):
     second_list = [4, 5, 6]
     return first_list + second_list
 
-
 def test_merge_lists():
 
     first_list = [1, 2, 3]
@@ -110,9 +113,7 @@ def list_to_string(my_list):
     Given a list the is funciton returns a string which includes the items of the list
     separated by single spaces
     '''
-    my_list = ['one', 'two', 'three']
-    my_string = ', '.join(my_list)
-    
+    return ' '.join(my_list)
     
 def test_list_to_string():
     my_list = ['one', 'two', 'three']
@@ -127,7 +128,6 @@ def count_occurrences(my_list):
     the number of occurrences of a item in a given list.
     '''
     return Counter(my_list)
-
 
 def test_count_occurrences():
     my_list = ['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c']
@@ -144,8 +144,6 @@ def string_to_list(my_string):
         return None
     elif isinstance(my_string, str):
         return list(my_string)
-
-
 
 def test_string_to_list():
     assert string_to_list('hello world') == ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
