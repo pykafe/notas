@@ -1,6 +1,6 @@
 def empty_dict():
     """ Return an empty dict """
-    return {}
+    pass
 
 
 def test_empty_dict():
@@ -13,7 +13,7 @@ def test_empty_dict():
 def dict_with_one_keyvalue():
     """ Return a dictionary with only one key value pair
     the key and value can be anything you like"""
-    return {'somekey': 'somevalue'}
+    pass
 
 
 def test_dict_with_one_keyvalue():
@@ -25,7 +25,7 @@ def test_dict_with_one_keyvalue():
 
 def value_from_dict(dictionary, key):
     """ return the value in the dictionary for the key given """
-    return dictionary[key]
+    pass
 
 
 def test_value_from_dict():
