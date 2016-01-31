@@ -25,10 +25,8 @@ Lists have a method `insert`.  Insert adds an object before the index: `insert(i
 
     >>> def squared(x):
     ...    return x**2
-
     >>> squared(3)
     9
-
     >>> squared2 = lambda x: x**2
     >>> squared2(3)
     9
@@ -51,7 +49,6 @@ Use `in`
 
     >>> 'Anders' in them
     False
-
     >>> 'Niko' in them
     True
 
@@ -60,7 +57,6 @@ Use `in`
 `.index()` returns the first index for a given value
 
     >>> us = ['Peter', 'Niko', 'Mario', 'Peter']
-
     >>> us.index('Peter')
     0
 
