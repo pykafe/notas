@@ -1,6 +1,7 @@
 ######################################################
 # Dicts
 # https://docs.python.org/2/library/stdtypes.html#dict
+# all functions can be completed using ONE LINE ONLY
 #######################################################
 import pytest
 
