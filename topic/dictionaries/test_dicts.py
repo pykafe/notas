@@ -36,3 +36,20 @@ def test_value_from_dict():
     assert value_from_dict(dict1, 1) == 50
     assert value_from_dict(dict1, 2) == 500
     assert value_from_dict(dict2, 0) == "five"
+
+
+def is_key_in_dict(key, dictionary):
+    """ return True if the key is in the dictionary, False if not """
+    pass
+
+
+def test_is_key_in_dict():
+    test_dict = {
+        "hello": "world",
+        "Michael": "Jackson",
+        "Barack": "Obama"
+        }
+
+    assert is_key_in_dict("Michael", test_dict) is True
+    assert is_key_in_dict("Barack", test_dict) is True
+    assert is_key_in_dict("Anders", test_dict) is False
