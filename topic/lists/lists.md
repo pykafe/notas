@@ -56,7 +56,8 @@ lista.reverse()
 len(lista)
 
 
-
+#How do you change value at index?
+us[]
 
 #Joining elements in a list
 
