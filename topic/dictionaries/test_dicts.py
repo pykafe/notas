@@ -151,3 +151,36 @@ def test_value_with_default():
     assert value_with_default(test_dict, "Barack") == "Obama"
     assert value_with_default(test_dict, "notpresent") is None
     assert value_with_default(test_dict, "notpresent", "default") == "default"
+
+
+def remove_key(dictionary, key):
+    """ Remove a key value pair from the dictionary """
+    pass
+
+
+def test_remove_key():
+    test_dict = {
+        "hello": "world",
+        "Michael": "Jackson",
+        "Barack": "Obama"
+        }
+
+    remove_key(test_dict, 'hello')
+    assert 'hello' not in test_dict
+
+
+def return_and_remove_key(dictionary, key):
+    """ remove a key from the dictionary and return it's value """
+    pass
+
+
+def test_remove_and_return_key():
+    test_dict = {
+        "hello": "world",
+        "Michael": "Jackson",
+        "Barack": "Obama"
+        }
+
+    value = return_and_remove_key(test_dict, 'hello')
+    assert value == 'world'
+    assert 'hello' not in test_dict
