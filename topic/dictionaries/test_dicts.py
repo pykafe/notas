@@ -36,13 +36,17 @@ def value_from_dict(dictionary, key):
 
 
 def test_value_from_dict():
-    dict1 = {0: 5, 1: 50, 2: 500}
-    dict2 = {0: "five", 1: "fifty", 2: "five hundred"}
+    test_dict = {
+        "hello": "world",
+        "Michael": "Jackson",
+        "Barack": "Obama"
+        }
 
     # check the method returns the correct value
-    assert value_from_dict(dict1, 1) == 50
-    assert value_from_dict(dict1, 2) == 500
-    assert value_from_dict(dict2, 0) == "five"
+    assert value_from_dict(test_dict, 'hello') == 'world'
+    assert value_from_dict(test_dict, 'Michael') == 'Jackson'
+    with pytest.raises(KeyError):
+        value_from_dict(test_dict, "keynotpresent")
 
 
 def is_key_in_dict(key, dictionary):
@@ -106,7 +110,11 @@ def test_get_dictionary_keys():
         "Barack": "Obama"
         }
 
-    assert get_dictionary_keys(test_dict) == ['hello', 'Michael', 'Barack']
+    assert 'hello' in get_dictionary_keys(test_dict)
+    assert 'Michael' in get_dictionary_keys(test_dict)
+    assert 'Barack' in get_dictionary_keys(test_dict)
+    assert isinstance(get_dictionary_keys(test_dict), list)
+    assert len(get_dictionary_keys(test_dict)) == 3
 
 
 def get_dictionary_values(dictionary):
@@ -121,26 +129,11 @@ def test_get_dictionary_values():
         "Barack": "Obama"
         }
 
-    assert get_dictionary_values(test_dict) == ['world', 'Jackson', 'Obama']
-
-
-def value_from_dictionary(dictionary, key):
-    """ Return the value from the dictionary stored under the key given """
-    pass
-
-
-def test_value_from_dictionary():
-    test_dict = {
-        "hello": "world",
-        "Michael": "Jackson",
-        "Barack": "Obama"
-        }
-
-    assert value_from_dictionary(test_dict, "Barack") == "Obama"
-
-    # check that an assertion is raised when we try to get a key that is not in the dictionary
-    with pytest.raises(KeyError):
-        value_from_dictionary(test_dict, "keynotpresent")
+    assert 'world' in get_dictionary_values(test_dict)
+    assert 'Jackson' in get_dictionary_values(test_dict)
+    assert 'Obama' in get_dictionary_values(test_dict)
+    assert isinstance(get_dictionary_values(test_dict), list)
+    assert len(get_dictionary_values(test_dict)) == 3
 
 
 def value_with_default(dictionary, key, default=None):
