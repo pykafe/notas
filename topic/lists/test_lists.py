@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 # Lists
 # This is how you write a funciton and a test with py.test
 
@@ -18,7 +21,8 @@ def add_to_list(my_value, my_list):
     Given a value and a list this function
     returns a list with the value added to it
     '''
-    pass
+    my_list.append(my_value)
+    return my_list
 
 
 def test_add_to_list():
@@ -37,7 +41,7 @@ def get_index_from_list(my_index, my_list):
     If index is not an integer return None
     Remember Python indexes starts at 0
     '''
-    pass
+    return my_list[my_index]
 
 
 def test_get_index_from_list():
@@ -54,7 +58,8 @@ def is_in_list(my_value, my_list):
     Given a value and a list this function checks if the value can be found in the list
     and returns True or False
     '''
-    pass
+    return my_value in my_list
+
 
 def test_is_in_list():
     my_value = 3
@@ -72,7 +77,7 @@ def get_length(my_list):
     Given a list this function
     returns the number of items in the list
     '''
-    pass
+    return len(my_list)
 
 
 def test_get_length():
@@ -87,7 +92,8 @@ def merge_lists(first_list, second_list):
     Given two list this function returns a single list which contains the items of the
     first list followed by the items of the second list
     '''
-    pass
+    first_list.extend(second_list)
+    return first_list
 
 
 def test_merge_lists():
@@ -104,7 +110,7 @@ def list_to_string(my_list):
     Given a list the is funciton returns a string which includes the items of the list
     separated by single spaces
     '''
-    pass
+    return ' '.join(my_list)
 
 
 def test_list_to_string():
@@ -119,7 +125,7 @@ def count_occurrences(my_list):
     This function will return a dictionary containing
     the number of occurrences of a item in a given list.
     '''
-    pass
+    return Counter(my_list)
 
 
 def test_count_occurrences():
@@ -133,11 +139,11 @@ def string_to_list(my_string):
     This function takes a string and returns that string as a list.
     If a the given value is not a string. The function returns None.
     '''
-    pass
+    if isinstance(my_string, str):
+        return list(my_string)
 
 
 def test_string_to_list():
     assert string_to_list('hello world') == ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
     assert string_to_list(5) == None
     assert string_to_list({'hello': 'world'}) == None
-
