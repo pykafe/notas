@@ -20,10 +20,13 @@ def add_to_list(my_value, my_list):
     returns a list with the value added to it
     '''
 
-    lista = []
-    lista.append(my_value)
-    my_value = lista
-    return my_list + my_value
+    #lista = []
+    #lista.append(my_value)
+    #my_value = lista
+    #return my_list + my_value
+    my_list.append(my_value)
+    return my_list
+
 
 
 def test_add_to_list():
@@ -44,8 +47,8 @@ def get_index_from_list(my_index, my_list):
     '''
     if isinstance(my_index, int):
         return my_list[my_index]
-    else:
-        return None
+  #  else:
+    #    return None
 
 def test_get_index_from_list():
     my_list = ['1', 'Baucau', 'Aileu', 5, 'Cars']
@@ -158,9 +161,11 @@ def string_to_list(my_string):
     This function takes a string and returns that string as a list.
     If a the given value is not a string. The function returns None.
     '''
-    if not isinstance(my_string, str):
-        return None
-    elif isinstance(my_string, str):
+ #   if not isinstance(my_string, str):
+  #      return None
+#    elif isinstance(my_string, str):
+   #     return =`=jedi=0, list(my_string)=`= (object, *_*class_or_type_or_tuple*_*) =`=jedi=`=
+    if isinstance(my_string, str) and  not isinstance (my_string, int):
         return list(my_string)
 
 
