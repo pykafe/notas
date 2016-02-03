@@ -8,7 +8,7 @@ import pytest
 
 def empty_dict():
     """ Return an empty dict """
-    pass
+    return {}
 
 
 def test_empty_dict():
@@ -21,7 +21,8 @@ def test_empty_dict():
 def dict_with_one_keyvalue():
     """ Return a dictionary with only one key value pair
     the key and value can be anything you like"""
-    pass
+    dict_with_one_keyvalue = {'nando': 1}
+    return dict_with_one_keyvalue
 
 
 def test_dict_with_one_keyvalue():
@@ -33,7 +34,7 @@ def test_dict_with_one_keyvalue():
 
 def value_from_dict(dictionary, key):
     """ return the value in the dictionary for the key given """
-    pass
+    return dictionary[key]
 
 
 def test_value_from_dict():
@@ -52,7 +53,10 @@ def test_value_from_dict():
 
 def is_key_in_dict(key, dictionary):
     """ return True if the key is in the dictionary, False if not """
-    pass
+    if key in dictionary:
+        return True
+    else:
+        return False
 
 
 def test_is_key_in_dict():
@@ -69,7 +73,7 @@ def test_is_key_in_dict():
 
 def dictionary_length(dictionary):
     """ Return the length of the dictionary, the number of key/value pairs """
-    pass
+    return len(dictionary)
 
 
 def test_dictionary_length():
@@ -83,7 +87,8 @@ def test_dictionary_length():
 
 def add_key_value(dictionary, key, value):
     """ Add a key value pair to a dictionary """
-    pass
+    dictionary[key] = value
+    return dictionary
 
 
 def test_add_key_value():
@@ -101,7 +106,7 @@ def test_add_key_value():
 
 def get_dictionary_keys(dictionary):
     """ should return a list of all keys in a dictionary """
-    pass
+    return dictionary.keys()
 
 
 def test_get_dictionary_keys():
@@ -120,7 +125,7 @@ def test_get_dictionary_keys():
 
 def get_dictionary_values(dictionary):
     """ should return a list of all values in a dictionary """
-    pass
+    return dictionary.values()
 
 
 def test_get_dictionary_values():
@@ -139,7 +144,10 @@ def test_get_dictionary_values():
 
 def value_with_default(dictionary, key, default=None):
     """ return the value from the dictionary stored under the key given, if it is not present return the default supplied """
-    pass
+    if key in dictionary:
+        return dictionary[key]
+    else:
+        return default
 
 
 def test_value_with_default():
@@ -156,7 +164,8 @@ def test_value_with_default():
 
 def remove_key(dictionary, key):
     """ Remove a key value pair from the dictionary """
-    pass
+    del dictionary[key]
+    return dictionary
 
 
 def test_remove_key():
@@ -172,7 +181,7 @@ def test_remove_key():
 
 def return_and_remove_key(dictionary, key):
     """ remove a key from the dictionary and return it's value """
-    pass
+    return dictionary.pop(key)
 
 
 def test_remove_and_return_key():
