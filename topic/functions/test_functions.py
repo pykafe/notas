@@ -19,7 +19,7 @@ my_function_returns_something = "this is not a function. Tenki troka"
 
 def test_my_function_returns_something():
     # this line will assert, fail the test, if my_returning_function returns a non true value
-    returned_value =  my_function_returns_something()
+    returned_value = my_function_returns_something()
     assert returned_value
 
 
