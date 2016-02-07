@@ -35,10 +35,7 @@ def test_dict_with_one_keyvalue():
 
 def value_from_dict(dictionary, key):
     """ return the value in the dictionary for the key given """
-    if key in dictionary:
-        return dictionary[key]
-    else:
-        return dictionary[key, "keynotpresent"]
+    return dictionary[key]
 
 
 def test_value_from_dict():
