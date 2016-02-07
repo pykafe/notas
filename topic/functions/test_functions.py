@@ -66,6 +66,24 @@ def test_my_function_one_required_one_optional():
         my_function_one_required_one_optional("first", "second", "third")
 
 
+# make a function that takes two named parameters - name your parameters param_a and param_b
+my_function_two_named = "this is not a function. Tenki troka"
+
+
+def test_my_function_two_named():
+
+    # your function should have default values so can be called with no parameters
+    my_function_two_named()
+    # your function should have default values so can be called with one parameter
+    my_function_two_named(1)
+    # your function can decide which parameter is which based on the prder they are given
+    my_function_two_named(1, 2)
+    # your function can decide which parameter is which based on the names given
+    my_function_two_named(param_a=1, param_b=2)
+    # your function can decide which parameter is which based on the names given
+    my_function_two_named(param_b=1, param_a=2)
+
+
 # make a function that changes the value of the parameter passed to it
 my_function_changes_parameter_value = "this is not a function. Tenki troka"
 
@@ -77,3 +95,23 @@ def test_my_function_changes_parameter_value():
     my_function_changes_parameter_value(my_variable)
     # fail the test if the value of the variable has not changed
     assert my_variable != 5
+
+
+# This function accepts any number of unnamed arguments
+my_function_many_arguments = "this is not a function. Tenki troka"
+
+
+def test_my_function_many_arguments():
+    my_function_many_arguments()
+    my_function_many_arguments(3, 4)
+    my_function_many_arguments(3, 4, 5)
+    my_function_many_arguments(3, 4, 5, 6, 7, 8, 23, "heello", "any number of arguments can be passed to this function")
+
+
+my_function_many_keyword_arguments = "this is not a function. Tenki troka"
+
+
+def test_my_function_many_keyword_arguments():
+    my_function_many_keyword_arguments()
+    my_function_many_keyword_arguments(a_keyword=3, another_keyword=4)
+    my_function_many_keyword_arguments(a_keyword=3, another_keyword=4, idatan_keyword=5)
