@@ -6,7 +6,10 @@ import pytest
 
 # make my_function a function that can be called with no variables
 # the body of your function should be one line: pass
-my_simple_function = "this is not a function. Tenki troka"
+
+
+def my_simple_function():
+    pass
 
 
 def test_my_function():
@@ -19,7 +22,8 @@ def test_my_function():
 
 # make my_returning_function a function that returns a value that does not evaluate to false
 # this function is the only one you need to write a body for - you must return something
-my_function_returns_something = "this is not a function. Tenki troka"
+def my_function_returns_something():
+    return "Hello World"
 
 
 def test_my_function_returns_something():
@@ -33,8 +37,8 @@ def test_my_function_returns_something():
 
 # make my_function_with_parameter a function that takes a parameter
 # the body of your function should be one line: pass
-my_function_with_parameter = "this is not a function. Tenki troka"
-
+def my_function_with_parameter(parameter_1):
+    pass
 
 def test_my_function_with_parameter():
     # this line will assert if your function does not accept a parameter
@@ -47,8 +51,8 @@ def test_my_function_with_parameter():
 
 # make my_function_three_parameters a function that takes three parameters
 # the body of your function should be one line: pass
-my_function_three_parameters = "this is not a function. Tenki troka"
-
+def my_function_three_parameters(parameter_1, parameter_2, parameter_3):
+    pass
 
 def test_my_function_three_parameters():
     # this line will assert if your function does not accept a parameter
@@ -62,8 +66,8 @@ def test_my_function_three_parameters():
 
 # make my_function_optional_parameter a function which can take a parameter, or not
 # the body of your function should be one line: pass
-my_function_optional_parameter = "this is not a function. Tenki troka"
-
+def my_function_optional_parameter(parameter_1=0):
+    pass
 
 def test_my_function_optional_parameter():
     # this line checks we can call the function without a parameter
@@ -77,8 +81,8 @@ def test_my_function_optional_parameter():
 
 # make a function with 1 required parameter and 1 optional parameter
 # the body of your function should be one line: pass
-my_function_one_required_one_optional = "this is not a function. Tenki troka"
-
+def my_function_one_required_one_optional(parameter_1=0, parameter_2=0):
+    pass
 
 def test_my_function_one_required_one_optional():
     # this line will assert if your function does not accept a parameter
@@ -93,7 +97,10 @@ def test_my_function_one_required_one_optional():
 
 # make a function that takes two named parameters - name your parameters param_a and param_b
 # the body of your function should be one line: pass
-my_function_two_named = "this is not a function. Tenki troka"
+
+
+def my_function_two_named(param_a=0, param_b=0):
+    pass
 
 
 def test_my_function_two_named():
@@ -115,8 +122,8 @@ def test_my_function_two_named():
 
 # This function accepts any number of unnamed arguments
 # the body of your function should be one line: pass
-my_function_many_arguments = "this is not a function. Tenki troka"
-
+def my_function_many_arguments(*args):
+    pass
 
 def test_my_function_many_arguments():
     my_function_many_arguments()
@@ -127,8 +134,8 @@ def test_my_function_many_arguments():
 
 # This function accepts any number of keyword arguments
 # the body of your function should be one line: pass
-my_function_many_keyword_arguments = "this is not a function. Tenki troka"
-
+def my_function_many_keyword_arguments(**kwargs):
+    pass
 
 def test_my_function_many_keyword_arguments():
     my_function_many_keyword_arguments()
