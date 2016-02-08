@@ -8,7 +8,6 @@ import pytest
 
 def empty_dict():
     """ Return an empty dict """
-
     dictionary = {}
     return dictionary
 
@@ -27,6 +26,7 @@ def dict_with_one_keyvalue():
     dictionary = {"hello": "world"}
     return dictionary
 
+
 def test_dict_with_one_keyvalue():
     # check the value returned from dict_with_one_keyvalue is a dictionary
     assert isinstance(dict_with_one_keyvalue(), dict)
@@ -40,7 +40,7 @@ def value_from_dict(dictionary, key):
         return dictionary[key]
     else:
         return dictionary[key, "keynotpresent"]
-    
+
 
 def test_value_from_dict():
     test_dict = {
@@ -58,8 +58,9 @@ def test_value_from_dict():
 
 def is_key_in_dict(key, dictionary):
     """ return True if the key is in the dictionary, False if not """
-     
+
     return key in dictionary
+
 
 def test_is_key_in_dict():
     test_dict = {
@@ -90,7 +91,7 @@ def test_dictionary_length():
 
 def add_key_value(dictionary, key, value):
     """ Add a key value pair to a dictionary """
-    
+
     dictionary["Rui"] = "Araujo"
 
 
@@ -111,6 +112,7 @@ def get_dictionary_keys(dictionary):
     """ should return a list of all keys in a dictionary """
     return dictionary.keys()
 
+
 def test_get_dictionary_keys():
     test_dict = {
         "hello": "world",
@@ -128,7 +130,7 @@ def test_get_dictionary_keys():
 def get_dictionary_values(dictionary):
     """ should return a list of all values in a dictionary """
     return dictionary.values()
-    
+
 
 def test_get_dictionary_values():
     test_dict = {

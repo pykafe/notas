@@ -56,8 +56,11 @@ docs/_build/
 # PyBuilder
 target/
 
+<<<<<<< HEAD
 # any tilda files
 *~
 
+=======
+>>>>>>> master
 # MacOS X
 .DS_Store

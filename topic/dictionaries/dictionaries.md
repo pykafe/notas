@@ -25,7 +25,11 @@ Keys are unique.
     {'Ano': 26, 'Nando': 26, 'Niko': 25, 'Peter': 36}
 
 
+<<<<<<< HEAD
 ## How doe we get a value for a key?
+=======
+## How do we get a value for a key?
+>>>>>>> master
 
     >>> ages.get('Peter')
     36
@@ -91,4 +95,7 @@ Use the `.values()` method
 
     >>> ages.values()
     [26, 36, 25]
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
