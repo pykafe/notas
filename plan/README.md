@@ -11,6 +11,6 @@
 ##Midweek - Segunda - Kinta
 - Basic projects to practice design, test, implementation
   - [Hello World](https://github.com/pykafe/HelloWorld) - basic django project, BDD test exists and satisfied
-  - TweetyTimor - open message board
+  - [TweetyTimor](https://github.com/pykafe/tweetytimor) - open message board
   - Guess The Number - django backed project, BDD tests for guessing a random number
 
