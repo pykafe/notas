@@ -1,6 +1,7 @@
 #########################
 # Revision
 #########################
+import re
 
 
 # this variable should be a string
@@ -36,15 +37,15 @@ def test_list_item():
 
 def dictionary_describe(dictionary_in):
     ''' return a string describing the passed in dictionary in the following format
-    {0: 1, 3: 4, 8: 9} => "3 key value pairs, the first key is 0"
-    {"English": "Hello", "Tetum": "Bondia"} => "2 key value pairs, the first key is English"
+    {0: 1, 3: 4, 8: 9} => "3 key value pairs, one key is 0"
+    {"English": "Hello", "Tetum": "Bondia"} => "2 key value pairs, one key is English"
     '''
     pass
 
 
 def test_dictionary_describe():
-    assert dictionary_describe({0: 1, 3: 4, 8: 9}) == "3 key value pairs, the first key is 0"
-    assert dictionary_describe({"English": "Hello", "Tetum": "Bondia"}) == "2 key value pairs, the first key is English"
+    assert dictionary_describe({0: 1, 3: 4, 8: 9}) == "3 key value pairs, one key is 0"
+    assert re.match("2 key value pairs, one key is [English|Tetum]", dictionary_describe({"English": "Hello", "Tetum": "Bondia"}))
 
 
 # This should be a function
