@@ -5,11 +5,16 @@
 
 def sum_of_integers(maximum):
     ''' return the sum of all the integers up to maximum
-    hint: create a sum variable value 0, and a counter variable value 1
-    WHILE the counter is less than OR EQUAL TO the maximum, add the counter to the sum, add 1 to the counter
-    after the while loop has exited, return the sum
+    hint: create a total_sum variable value 0, and a counter variable value 1
+    WHILE the counter is less than OR EQUAL TO the maximum, add the counter to the total_sum, add 1 to the counter
+    after the while loop has exited, return the total_sum
     '''
-    pass
+    total_sum = 0
+    counter = 1
+    while counter <= maximum:
+        total_sum = total_sum + counter
+        counter = counter + 1
+    return total_sum
 
 
 def test_sum_of_integers():
@@ -30,18 +35,19 @@ def test_ten_multiples_of():
     result_1 = ten_multiples_of(2)
     assert isinstance(result_1, list)
     assert len(result_1) == 10
-    assert sum([x % 2 for x in result_1])
+    assert sum([x % 2 for x in result_1]) == 0
 
     result_2 = ten_multiples_of(5)
     assert isinstance(result_2, list)
     assert len(result_2) == 10
-    assert sum([x % 5 for x in result_2])
+    assert sum([x % 5 for x in result_2]) == 0
 
 
 def mulitply_odd_numbers_until(maximum):
     ''' return the value of multiplying together all the odd integers up to maximum
     hint: NO HINTS THIS TIME
     '''
+    pass
 
 
 def test_mulitply_odd_numbers_until():
@@ -56,8 +62,9 @@ def sum_and_product(in_list):
     sum_and_product([2, 3]) == (6, 5)
     sum_and_product([2, 4, 6]) == (12, 48)
     '''
+    pass
 
 
 def test_sum_and_product():
-    assert sum_and_product([2, 3]) == (6, 5)
+    assert sum_and_product([2, 3]) == (5, 6)
     assert sum_and_product([2, 4, 6]) == (12, 48)
