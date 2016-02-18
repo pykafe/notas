@@ -73,15 +73,15 @@ By default a function returns `None`
 `pass` is a place holder which does nothing.
 It is a reserved word in Python, so don't use `pass` for variable or function names.
 
-   >>> def add(this, that):
-   ....:     if type(this) != int:
-   ....:         pass
-   ....:     else:
-   ....:         return this + that
-   >>> add('Mario', 1)
+	>>> def add(this, that):
+  	 ....:     if type(this) != int:
+   	....:         pass
+   	....:     else:
+   	....:         return this + that
+   	>>> add('Mario', 1)
 
-   >>> add(3, 1)
-   4
+   	>>> add(3, 1)
+   	4
 
 
 ## What is an Argument (aka Parameter)?
@@ -180,23 +180,11 @@ It is the difference between inside and outside. What you define outside of a fu
     3
 
 
-## Functions can return multiple values via tuples.
 
-    >>> def counter(index):
-    ....:     new_index = index + 1
-    ....:     return index, new_index
-    >>> counter(1)
-    (1, 2)
-    >>> this, that = counter(5)
-    >>> this
-    5
-    >>> that
-    6
-
-## What is the difference between a method and a function?
-
-### What is a Function?
-A piece of code that we can define in one place and reuse.  It can take arguments and can also return values.
-
-### What is a Method?
-A method is a special kind of Function which is bound to a Class.
+>>> x = 0
+>>> while True:
+...     x = x + 1
+...     print x
+...     if x == 100:
+...             break
+... 

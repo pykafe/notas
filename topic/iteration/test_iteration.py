@@ -28,7 +28,13 @@ def ten_multiples_of(number):
     WHILE the lenght of the list is less than 10, append counter * number to the list, add 1 to the counter
     after the while loop has exited, return the list
     '''
-    pass
+    result_1 = []
+    counter = 1
+    while len([]) < 10:
+        counter * result_1
+        counter = counter + 1
+    return result_1
+    
 
 
 def test_ten_multiples_of():
@@ -47,7 +53,11 @@ def mulitply_odd_numbers_until(maximum):
     ''' return the value of multiplying together all the odd integers up to maximum
     hint: NO HINTS THIS TIME
     '''
-    pass
+    maximum = 5
+    while maximum < 10:
+        maximum = maximum * 1
+    return maximum, 'is odd'
+
 
 
 def test_mulitply_odd_numbers_until():
@@ -58,7 +68,7 @@ def test_mulitply_odd_numbers_until():
 def sum_and_product(in_list):
     ''' return 2 values from this function - a tuple
     the first value is the sum of all the values in the list
-    the second alue is the product of all the values in the list
+    the second value is the product of all the values in the list
     sum_and_product([2, 3]) == (6, 5)
     sum_and_product([2, 4, 6]) == (12, 48)
     '''
