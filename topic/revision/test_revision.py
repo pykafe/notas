@@ -40,9 +40,8 @@ def dictionary_describe(dictionary_in):
     {0: 1, 3: 4, 8: 9} => "3 key value pairs, one key is 0"
     {"English": "Hello", "Tetum": "Bondia"} => "2 key value pairs, one key is English"
     '''
-    pykafe={}
-    hello=pykafe.update("3 key value pairs, one key is 0")
-    return dictionary_in[hello]
+    return "{first} key value pairs, one key is {second}".format(first=dictionary_in['4'], second=dictionary['1'])
+
 
 
 def test_dictionary_describe():
