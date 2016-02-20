@@ -5,15 +5,15 @@ import re
 
 
 # this variable should be a string
-a_string = None
+a_string = str()
 # this variable should be an integer
-a_integer = None
+a_integer = int()
 # this variable should be a float
-a_float = None
+a_float = float()
 # this variable should be a list
-a_list = None
+a_list = list()
 # this variable should be a dictionary
-a_dictionary = None
+a_dictionary = {0: 1, 3: 4, 8: 9}
 
 
 def test_types():
@@ -40,8 +40,17 @@ def dictionary_describe(dictionary_in):
     {0: 1, 3: 4, 8: 9} => "3 key value pairs, one key is 0"
     {"English": "Hello", "Tetum": "Bondia"} => "2 key value pairs, one key is English"
     '''
-    pass
+    
+    dictionary_in =  {0: 1, 3: 4, 8: 9}
+    maluk = dictionary_in.update("3 key value pairs, one key is 0")
+    print (maluk)
+   
+   # numberFormat.format(**dictionary)
 
+   # numberFormat = 'Count in Spanish: {one}, {two}, {three}, ...'
+   # withSubstitutions = numberFormat.format(one='uno', two='dos', three='tres')
+   # print(withSubstitutions)
+    
 
 def test_dictionary_describe():
     assert dictionary_describe({0: 1, 3: 4, 8: 9}) == "3 key value pairs, one key is 0"
@@ -54,7 +63,11 @@ def test_dictionary_describe():
 #  1. the two parameters added together
 #  2. the two parameters multiplied together
 #  2. the string "my first parameter was x, my second parameter was y"
-my_function = "this is a string, not a function. please change it"
+def my_function(x, y):
+    X = x + y
+    Y = y * x
+    y  = "my first parameter was 1, my second parameter was 2"
+    return X, Y, y
 
 
 def test_my_function():
