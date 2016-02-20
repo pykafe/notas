@@ -58,6 +58,3 @@ target/
 
 # MacOS X
 .DS_Store
-
-#Ipynb checkpoints
-.ipynb_checkpoints/
