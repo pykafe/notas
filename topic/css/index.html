@@ -3,7 +3,83 @@
         <title>
             CSS Playground
         </title>
+        <style>
+            html {
+                background-color: Grey; /* the background of the whole browser window */
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+            }
+            body {
+                margin: 10px 20px 50px 20px; /*  margin is space OUTSIDE the element */
+                padding: 5px;               /* padding is space INSIDE the element */
+                background-color: LightGrey;
+                color: Red;                  /* color is the color of the TEXT in an element */
+                border-radius: 10px;
+            }
+            div {
+                margin: 2px;
+                padding: 4px;
+                background-color: Black;
+                border: 3px solid White;
+                border-style: ridge;
+                border-radius: 10px;
+            }
+            span {
+                padding: 5px;
+                margin: 10px;
+                background-color: Yellow;
+            }
+            li {
+                color: Blue;
+            }
+            td {
+                padding-left: 10px;
+            }
+            .age_column {
+                font-size: larger;
+            }
+        </style>
     </head>
     <body>
+        <div>
+            Hello World!
+        </div>
+
+        <h3> An unordered list</h3>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+
+        <h3> An ordered list</h3>
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+        <h3> A table</h3>
+        <table>
+            <tr>
+                <td>Name<td>
+                <td>Town<td>
+                <td class="age_column">Age<td>
+            </tr>
+            <tr>
+                <td>Peter<td>
+                <td>London<td>
+                <td class="age_column">37<td>
+            </tr>
+            <tr>
+                <td>Mariano<td>
+                <td>Eraulu<td>
+                <td class="age_column">26<td>
+            </tr>
+            <tr>
+                <td>Niko Barros<td>
+                <td>Marobo<td>
+                <td class="age_column">26<td>
+            </tr>
+        <table>
     </body>
 </html>
