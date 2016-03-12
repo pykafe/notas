@@ -39,6 +39,17 @@ def test_property():
 Dog = 'this is a string, you must make it a class'
 
 
-def test_class():
+def test_dog():
     dog = Dog()
     assert isinstance(dog, Dog)
+
+
+# A class with a constructor that takes a name paramter
+# in teh constructor create an instance variable 'name' and assign the name parameter value to it
+Cat = 'this is a string, you must make it a class'
+
+
+def test_cat():
+    cat = Cat('Busa')
+    assert isinstance(cat, Cat)
+    assert cat.name == 'Busa'
