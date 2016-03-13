@@ -1,11 +1,16 @@
 # give this base class a method called hello
 class BaseClass(object):
-    pass
+
+
+    def hello(self):
+        return "say someting"
 
 
 # Make this class inherit from BaseClass
-class ClassOne(object):
-    pass
+class ClassOne(BaseClass):
+
+    def name(self, name=None):
+            return name
 
 
 def test_inheritance():
@@ -36,7 +41,9 @@ def test_property():
 
 
 # A new class
-Dog = 'this is a string, you must make it a class'
+class Dog(object):
+    pass
+#Dog = 'this is a string, you must make it a class'
 
 
 def test_dog():
@@ -46,7 +53,15 @@ def test_dog():
 
 # A class with a constructor that takes a name paramter
 # in teh constructor create an instance variable 'name' and assign the name parameter value to it
-Cat = 'this is a string, you must make it a class'
+#Cat = 'this is a string, you must make it a class'
+
+class Cat(object):
+
+    def __init__(self, name):
+        self.name = name
+
+    def name(self, name):
+        return name
 
 
 def test_cat():
