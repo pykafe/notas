@@ -178,3 +178,25 @@ It is the difference between inside and outside. What you define outside of a fu
     9
     >>> x
     3
+
+
+## Functions can return multiple values via tuples.
+
+    >>> def counter(index):
+    ....:     new_index = index + 1
+    ....:     return index, new_index
+    >>> counter(1)
+    (1, 2)
+    >>> this, that = counter(5)
+    >>> this
+    5
+    >>> that
+    6
+
+## What is the difference between a method and a function?
+
+### What is a Function?
+A piece of code that we can define in one place and reuse.  It can take arguments and can also return values.
+
+### What is a Method?
+A method is a special kind of Function which is bound to a Class.
