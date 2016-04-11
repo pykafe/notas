@@ -1,11 +1,21 @@
 # give this base class a method called hello
 class BaseClass(object):
-    pass
+
+    def __init__(self):
+        self.hello()
+
+    def hello():
+        return "Buat ruma"
 
 
 # Make this class inherit from BaseClass
-class ClassOne(object):
-    pass
+class ClassOne(BaseClass):
+
+    def __init__(self):
+        self.name
+
+    def name(self, name):
+        return name
 
 
 def test_inheritance():
