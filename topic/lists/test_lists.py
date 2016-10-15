@@ -18,13 +18,10 @@ def add_to_list(my_value, my_list):
     Given a value and a list this function
     returns a list with the value added to it
     '''
-<<<<<<< HEAD
+
     my_list = [1, 2, 3, 4]
     my_value = ([5])
     return my_list + my_value
-=======
-    pass
->>>>>>> master
 
 
 def test_add_to_list():

@@ -118,8 +118,6 @@ A for loop will loop through an iterable like lists, dictionaries, sets, and tup
     2 Niko
     3 Nando
 
-
-<<<<<<< HEAD
 ## Determina valor 1 to'o 100
     >>> x = 0
     >>> while True:
@@ -276,21 +274,6 @@ A for loop will loop through an iterable like lists, dictionaries, sets, and tup
     8 is even
     10 is even
 
-#
-    >>> for x in "Hello World":
-    ...     print x
-    ... 
-    H
-    e
-    l
-    l
-    o
-     
-    W
-    o
-    r
-    l
-    d
 
 ## iteration ho lista no keys sira
 
@@ -564,4 +547,3 @@ Peterppppppppppppppp
 [0, 1, 2, 3, 4]
 >>> len(numbers)
 5
->>>>>>> origin/master

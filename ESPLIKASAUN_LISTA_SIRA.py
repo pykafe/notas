@@ -5,14 +5,10 @@ iha lian python tau det dalaruma nia simu 	**'four'**
 
 the list use  calibraki the number start with zero.
 
-how do you find large of list?
-	
-	use len.
+We find large of list use len.
 
-the last value always
-
-	 -1
- oisna atu add list foun ita uza .append ex:
+the last value always -1
+oisna atu add list foun ita uza .append ex:
 	
 	>>> my_list.append('six')
 	>>> my_list 
@@ -118,31 +114,5 @@ muda list to'o csv no csv ba list
 	>>> ' __'.join(our_list)
 	'joanico barros __ mariano deus'
 	>>> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -2,25 +2,25 @@
 #### This is how you write a funciton and a test with py.test
 
 
-	def hello_world():
-   
- ''' This function returns 'Hello World '''
+def hello_world():
 
-		 return 'Hello World'
+''' This function returns 'Hello World '''
 
-	def test_hello_world():
-    		assert hello_world() == 'Hello World'
+	 return 'Hello World'
+
+def test_hello_world():
+		assert hello_world() == 'Hello World'
 
 
 #### Add to the List
 
-	def add_to_list(my_value, my_list):
+def add_to_list(my_value, my_list):
 
-  '''Given a value and a list this function returns a list with the value added to it '''
+'''Given a value and a list this function returns a list with the value added to it '''
 
-		my_list = [1, 2, 3, 4]
-		my_value = ([5])
-		return my_list + my_value
+	my_list = [1, 2, 3, 4]
+	my_value = ([5])
+	return my_list + my_value
 
 
 def test_add_to_list():
@@ -149,4 +149,3 @@ def test_string_to_list():
     assert string_to_list('hello world') == ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
     assert string_to_list(5) == None
     assert string_to_list({'hello': 'world'}) == None
-
