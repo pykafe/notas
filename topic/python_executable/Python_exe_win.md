@@ -1,6 +1,6 @@
 ##Python executable file ba windows
 
-**Python executable windows: py2exe or PyInstaller **
+**Python executable windows: py2exe or PyInstaller**
 
 python executable mak atu kria ka exekuta file (windows) nia mak ita presiza uza tools sira nee: Py2exe ka PyInstaller.  
 
