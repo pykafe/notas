@@ -67,7 +67,6 @@ Module no etap sira nebe kria ka converte file .py ba .exe iha sistema ubuntu
 Py2exe mak prolongamentu Python Distutils ida nebe konverte Python scripts (.py) ba Windows Microsoft executables (.exe). Executables hirak ne'e bele konkorre ba sistema ida la ho Python ona ka la presiza instalasaun Python.
 
 
-
 Module no etap sira nebe kria ka converte file .py ba .exe iha sistema windows
 
 **Etapa sira konaba compile python script:**
@@ -116,3 +115,4 @@ https://milkator.wordpress.com/2014/07/19/windows-executable-from-python-develop
 https://github.com/pyinstaller/pyinstaller/issues/1566
 
 https://fernandofreitasalves.com/how-to-create-python-exe-with-msi-installer-and-cx_freeze/
+
