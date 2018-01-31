@@ -37,7 +37,6 @@ def get_index_from_list(my_index, my_list):
     Remember Python indexes starts at 0
     '''
 
-    import pudb; pudb.set_trace():
     if isinstance(my_index, int):
         return my_list[my_index]
 
