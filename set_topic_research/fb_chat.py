@@ -1,6 +1,6 @@
 import fbchat
 
-client = fbchat.Client("+67076025211", "pw0520")
+client = fbchat.Client("email or phone number", "my_password")
 
 friends = client.getUsers("Ony De Jesus")  # return a list of names
 friend = friends[0]
