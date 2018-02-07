@@ -57,6 +57,7 @@ def is_in_list(my_value, my_list):
     '''
     pass
 
+
 def test_is_in_list():
     my_value = 3
     not_my_value = 4
@@ -138,7 +139,7 @@ def string_to_list(my_string):
 
 
 def test_string_to_list():
-    assert string_to_list('hello world') == ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+    assert string_to_list('hello world') == [
+        'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
     assert string_to_list(5) == None
     assert string_to_list({'hello': 'world'}) == None
-
