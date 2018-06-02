@@ -1,6 +1,6 @@
-##Python executable file ba windows
+## Python executable file ba windows
 
-**Python executable windows: py2exe or PyInstaller **
+**Python executable windows: py2exe or PyInstaller**
 
 python executable mak atu kria ka exekuta file (windows) nia mak ita presiza uza tools sira nee: Py2exe ka PyInstaller.  
 
@@ -12,7 +12,7 @@ PyInstaller mak programa ida nebe uza kria ka konverte Python scripts ba file wi
 
 Module no etap sira nebe kria ka converte file .py ba .exe iha sistema ubuntu
 
-###Atu hahu:
+### Atu hahu:
 
 1. prepara python no install python tuir verzaun no enviromentu nebe ita uza iha Sistema operasaun ubuntu.
 
@@ -100,7 +100,7 @@ setup(name='niko',
 -  `python setup.py bdist --format=msi`
 
 
-###Referensia: 
+### Referensia: 
 
 https://stackoverflow.com/questions/41570359/how-can-i-convert-a-py-to-exe-for-python-3-6
 
