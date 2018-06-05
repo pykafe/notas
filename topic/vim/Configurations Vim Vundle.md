@@ -607,5 +607,7 @@
       1. https://github.com/VundleVim/Vundle.vim
 
       2. https://www.digitalocean.com/community/tutorials/how-to-use-vundle-to-manage-vim-plugins-on-a-linux-vps
+      4. https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html
+      5. http://virtualenvwrapper.readthedocs.io/en/latest/install.html
 
          ​
